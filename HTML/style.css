@@ -58,3 +58,57 @@
 .last-header-2 i{
     margin-right: 18px;
 }
+.body-web{
+    /* block để theo hàng dọc */
+    display: block;
+}
+.body-web-img{
+    width: 100%;
+}
+.body-web-img img{
+    width:93%;
+    margin-left: 70px;
+}
+.body-web-des{
+    /* cho chữ chồng lên nhau */
+    display: grid;
+    /* căn chỉnh chữ ra giữa */
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif ;
+    margin-top: 40px;
+    line-height: 30px;
+}
+.des-1{
+    font-size: large;
+    font-weight: bold;
+}
+.des-2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.des-3{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.button-des{
+    margin-left: 678px;
+    border-radius: 50px;
+    padding: 10px 35px;
+    background: #111111;
+    color: #f5f5f5;
+    font-size: large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* hiện bàn tay khi chỉ vào */
+    cursor: pointer;
+    /* thời gian thực hiện */
+    transition: 1s;
+}
+/* chỉnh màu khi đưa chuột vào */
+.button-des:hover{
+    opacity:inherit ;
+    background-color: #707072;
+}
+
