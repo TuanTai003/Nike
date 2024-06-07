@@ -1,0 +1,60 @@
+.header{
+    display:flex;
+    justify-content: space-between;
+}
+.logo{
+    /* giới hạn độ to của khung hình chứa logo */
+    width: 10%;
+}
+/* độ to của logo trong khung */
+.logo img{
+    width:100%;
+}
+/* chỉnh khoảng cách viền xanh đến chữ */
+.mid-header{
+    margin-top: 50px;
+}
+/* khi gọi mid header thì phải gọi thêm thẻ a thì mới sửa được chữ */
+ .mid-header a{  
+    /* text-decoration:none để làm mất dấu gạch dưới */
+    text-decoration: none;
+    /* margin là khoảng cách giữa các chữ */
+    margin: 15px;
+    /* font-weight chỉnh font chữ */
+    font-weight: bold;
+    color: black;
+    font-size: 16px;
+    /* chỉnh font chữ */
+    font-family:Arial, Helvetica, sans-serif;
+}
+.last-header {
+    display: flex;
+    margin-top: 35px;   
+
+}
+.search-header{
+    margin-right: 20px;
+}
+.search-header input{
+    /* border chỉnh mất khung viền */
+    border:none;
+    /* background màu nền trong khung*/
+    background: #f5f5f5; 
+    /* màu chữ */
+    color: #707072;
+    /* làm tròn viền khung */
+    border-radius: 50px;
+    /*khoảng cách trong hộp  */
+    padding: 8px;
+    /* chiều rộng của khung */
+    width: 140px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.last-header-2{
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.last-header-2 i{
+    margin-right: 18px;
+}
