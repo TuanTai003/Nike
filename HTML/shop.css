@@ -1,6 +1,16 @@
+body {
+    /* mặc định thì sẽ hở 8px nên phải xét margin 0 */
+    /* gọi body thì ko cần . */
+    margin: 0;
+}
 .header{
     display:flex;
     justify-content: space-between;
+    background-color: #e7e6e8;
+    /* position fixed ghim vij trí */
+    position: fixed;
+    top:0;
+    z-index: 100;
 }
 .logo{
     /* giới hạn độ to của khung hình chứa logo */
@@ -61,59 +71,73 @@
 .last-header-2 i{
     margin-right: 18px;
 }
-.body-web{
-    /* block để theo hàng dọc */
-    display: block;
+/* body */
+.body-shop {
+    display: flex;
+    margin-top: 50px;
+    /* flex-wrap bọc lại xuống dòng */
+    flex-wrap: wrap;
+    /* căn ra space-around cách các ảnh ra */
+    justify-content:space-around;
+    margin-top: 170px;
+    /* gap khoảng cách giữa 2 div */
+    gap: 35px;
+    
 }
-.body-web-img{
+.shop-1 {
+    width: 300px;
+    background-color:rgb(251, 251, 251);
+    padding: 15px 20px;
+    border-radius:20px ;
+    /* đổ bóng */
+    box-shadow: 0 5px 9px black;
+    /* mất 0.3s giây để nổi */
+    transition:transform 0.3s;
+}
+.shop-1:hover{
+    /* khoảng cách lên xuống */
+    transform: translateY(-30px);
+}
+.shop-img{
+    /* chỉnh thành px khi dùng wrap */
+    width: 300px;
+}
+.shop-img img {
+    border-radius: 20px;
     width: 100%;
 }
-.body-web-img img{
-    width:93%;
-    margin-left: 70px;
+.shop-des {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
 }
-.body-web-des{
-    /* cho chữ chồng lên nhau */
-    display: grid;
-    /* căn chỉnh chữ ra giữa */
-    text-align: center;
-    font-family:Arial, Helvetica, sans-serif ;
-    margin-top: 40px;
-    line-height: 30px;
+.shop-des a {
+    text-decoration: none;
 }
-.des-1{
-    font-size: large;
+ .shop-des a:first-child { 
+    /* nếu chỉnh a ko thì tất cả đều bị thay đổi nên dùng first child để chỉ nhận cái đầu tiên  */
     font-weight: bold;
+    color: black; 
 }
-.des-2{
-    font-family: sans-serif;
-    font-size: 50px;
-    font-weight: bold;
-    margin-top: 15px;
-    margin-bottom: 20px;
+.shop-des a:first-child:hover {
+    color: #707072;
 }
-.des-3{
-    font-size: 20px;
-    margin-bottom: 20px;
+.shop-des p {
+    color: #707072;
+    /* chiều cao giữa các dòng */
+    line-height: 80%;
 }
-.button-des{
-    margin-left: 678px;
-    border-radius: 50px;
-    padding: 10px 35px;
-    background: #111111;
-    color: #f5f5f5;
-    font-size: large;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    /* hiện bàn tay khi chỉ vào */
-    cursor: pointer;
-    /* thời gian thực hiện */
-    transition: 1s;
+.price-tag p {
+    color: black;
 }
-/* chỉnh màu khi đưa chuột vào */
-.button-des:hover{
-    opacity:inherit ;
-    background-color: #707072;
+.shop-des p:hover {
+    color:black ;
 }
+.price-tag p:hover {
+    color: #707072;
+}
+    
+
+/* footer */
 .footer {
     display: flex;
     /* căn ra hai bên dùng justify-content: space-between */
@@ -169,4 +193,7 @@ margin-right: 20px;
 color: #707072;
 margin-left: 10px;
 }
+
+
+
 
