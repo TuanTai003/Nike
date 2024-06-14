@@ -72,9 +72,11 @@ body{
 .body-product{
     display: flex;
     margin: 150px 20px;
+   
 }
 .product-img{
     display: flex;
+    margin-left: 250px;
     
 }
 .product-img-small{
@@ -99,7 +101,7 @@ body{
 }
 .product-text{
    position: relative;
-   right: 500px;
+   right: 300px;
    z-index: 0;
    font-family:Arial, Helvetica, sans-serif 
 }
