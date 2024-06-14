@@ -1,17 +1,13 @@
-body {
-    /* mặc định thì sẽ hở 8px nên phải xét margin 0 */
-    /* gọi body thì ko cần . */
+body{
     margin: 0;
-}
+ }
 .header{
     display:flex;
     justify-content: space-between;
-    background-color: #e7e6e8;
-    /* position fixed ghim vij trí */
+    z-index: 100;
     position: fixed;
     top:0;
-    /* độ ưu tiên cao nhất */
-    z-index: 100;
+    background-color: #e7e6e8;
 }
 .logo{
     /* giới hạn độ to của khung hình chứa logo */
@@ -72,77 +68,131 @@ body {
 .last-header-2 i{
     margin-right: 18px;
 }
-/* body */
-.body-shop {
+/* header---------- */
+.body-product{
     display: flex;
-    margin-top: 50px;
-    /* flex-wrap bọc lại xuống dòng */
-    flex-wrap: wrap;
-    /* căn ra space-around cách các ảnh ra */
-    justify-content:space-around;
-    margin-top: 170px;
-    /* gap khoảng cách giữa 2 div */
-    gap: 35px;
+    margin: 150px 20px;
+}
+.product-img{
+    display: flex;
     
 }
-.shop-1 {
-    width: 300px;
-    background-color:rgb(251, 251, 251);
-    padding: 15px 20px;
-    border-radius:20px ;
-    /* đổ bóng */
-    box-shadow: 0 5px 9px black;
-    /* mất 0.3s giây để nổi */
-    transition:transform 0.3s;
+.product-img-small{
+    width: 10%;
 }
-.shop-1:hover{
-    /* khoảng cách lên xuống */
-    transform: translateY(-30px);
-}
-.shop-img{
-    /* chỉnh thành px khi dùng wrap */
-    width: 300px;
-}
-.shop-img img {
-    border-radius: 20px;
+.product-img-small img{
     width: 100%;
+    border-radius: 9px;
+    margin-left: 10px;
+    cursor: pointer;
 }
-.shop-des {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.product-img-small img:hover{
+    box-shadow:0px 4px 8px  rgb(26, 17, 17);
+}
+.product-img-big{
+    width: 50%;
+}
+.product-img-big img{
+    width: 81.4%;
+    border-radius: 9px;
+    margin-left: 20px;
+}
+.product-text{
+   position: relative;
+   right: 500px;
+   z-index: 0;
+   font-family:Arial, Helvetica, sans-serif 
+}
+.product-title{
+    width:120px;
+    line-height: 15px;
+ 
+}
+.product-title span{
+    font-weight: bold;
+    font-size: 21px;
+    
+}
+.product-title p{
+    font-weight: 20px;
+
+}
+.product-price-2{
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.product-size span{
+    font-weight: bold;
+    font-size: 15px;
+}
+.product-select-size{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-wrap:wrap;
+    width: 300px;
+    gap: 5px;
+}
+.product-select-size button{
+   padding: 12px 40px;
+   background-color: white;
+   /* độ dày của viền */
+   border: 1px solid black;
+   /* chỉ vào hiện tay */
+   cursor: pointer;
+   border-radius: 10px;
    
 }
-.shop-des a {
-    text-decoration: none;
+.button-1 button{
+    padding: 20px 87px;
+    background-color: rgb(30, 26, 26);
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-bottom: 10px;
+
 }
- .shop-des a:first-child { 
-    /* nếu chỉnh a ko thì tất cả đều bị thay đổi nên dùng first child để chỉ nhận cái đầu tiên  */
-    font-weight: bold;
-    color: black; 
-}
-.shop-des a:first-child:hover {
-    color: #707072;
-}
-.shop-des p {
-    color: #707072;
-    /* chiều cao giữa các dòng */
-    line-height: 80%;
-}
-.price-tag p {
+.button-1 button:hover{
+    background-color: #e7e6e8;
     color: black;
 }
-.shop-des p:hover {
-    color:black ;
+.button-2 button{
+    padding: 20px 92px;
+    background-color: rgb(30, 26, 26);
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-bottom: 10px;
 }
-.price-tag p:hover {
-    color: #707072;
+.button-2 button:hover{
+    background-color: #e7e6e8;
+    color: black;
 }
-    
 
-/* footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer---------- */
 .footer {
     display: flex;
     /* căn ra hai bên dùng justify-content: space-between */
-    justify-content: space-between;
+    justify-content:space-between;
     margin-top: 100px;
     /* căn lền 2 bên 0 là trên dưới,50 là trái phải */
     padding: 0 70px;
@@ -194,7 +244,3 @@ margin-right: 20px;
 color: #707072;
 margin-left: 10px;
 }
-
-
-
-

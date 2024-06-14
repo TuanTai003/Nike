@@ -1,6 +1,13 @@
+ body{
+    margin: 0;
+ }
 .header{
     display:flex;
     justify-content: space-between;
+    z-index: 100;
+    position: fixed;
+    top:0;
+    background-color: #e7e6e8;
 }
 .logo{
     /* giới hạn độ to của khung hình chứa logo */
@@ -64,6 +71,8 @@
 .body-web{
     /* block để theo hàng dọc */
     display: block;
+    margin-top: 150px;
+    
 }
 .body-web-img{
     width: 100%;
@@ -117,7 +126,7 @@
 .footer {
     display: flex;
     /* căn ra hai bên dùng justify-content: space-between */
-    justify-content: space-between;
+    justify-content:space-between;
     margin-top: 100px;
     /* căn lền 2 bên 0 là trên dưới,50 là trái phải */
     padding: 0 70px;
